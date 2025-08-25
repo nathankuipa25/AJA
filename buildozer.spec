@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = AJA
+title = EJA
 
 # (str) Package name
-package.name = aja_age_calculator
+package.name = eja_age_calculator
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.nattix
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,kivymd
+requirements = python3,kivy,kivymd,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
