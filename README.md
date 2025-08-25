@@ -14,7 +14,7 @@ This README will help you get the app running locally, package it for Android, a
 ## Screenshots
 
 ![Eja Main Screen](screenshots/Screenshot_20250820-120725.png) 
-![Eja Date Picker](screenshots/Screenshot_20250820-120725.png)
+![Eja Date Picker](screenshots/Screenshot_20250820-122607.png )
 
 
 ## Requirements
