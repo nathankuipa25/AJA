@@ -16,7 +16,7 @@ This README will help you get the app running locally, package it for Android, a
 
 Add screenshots in the `assets/` or `docs/` folder and reference them here:
 
-![Eja Main Screen](docs/screenshot-main.png)
+![Eja Main Screen](screenshots/Screenshot_20250820-120725.png)
 ![Eja Date Picker](docs/screenshot-datepicker.png)
 
 (Replace the images above with real screenshots from your project.)
