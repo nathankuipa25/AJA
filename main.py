@@ -30,6 +30,7 @@ MDFloatLayout:
 				halign: 'center'
 				disabled: True
 				pos_hint: {"center_x":.5,"center_y":.5}
+				font_name: '/storage/emulated/0/01fonts/NotoSerif-Bold.ttf'
 				multiline: False
 				background_color: 0,0,0,0
 				size_hint: .90,None
@@ -58,12 +59,14 @@ MDFloatLayout:
 			MDLabel:
 				id: output
 				text: 'Your age here!'
+				font_name: '/storage/emulated/0/01fonts/NotoSerif-Bold.ttf'
 				bold: True
 				halign: 'center'
 				pos_hint: {"center_x":.5,"center_y":.5}
 		
 		MDRaisedButton:
 			text: 'GET AGE'
+			font_name: '/storage/emulated/0/01fonts/NotoSerif-Bold.ttf'
 			elevation: 0.1
 			pos_hint: {"center_x":.5,"center_y":.30}
 			on_release: app.get_age()
@@ -113,6 +116,7 @@ class Eji(MDApp):
 			AGE = round(((NOW - dob).days)/365)
 			
 			self.root.ids.output.text=f'{AGE} Y/O'
+			#self.root.ids.user_dob.text = ""
 		
 		except TypeError:
 			toast('Please provide DOB!')
