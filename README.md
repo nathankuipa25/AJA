@@ -10,11 +10,9 @@ This README will help you get the app running locally, package it for Android, a
 - Select a date of birth with a date picker
 - Calculates age in years, months, and days
 - Handles leap years and varying month lengths
-- Lightweight and easy to extend
+- Lightweight and easy
 
-## Screenshots
-
-Add screenshots in the `assets/` or `docs/` folder and reference them here:
+#Screenshots
 
 ![Eja Main Screen](screenshots/Screenshot_20250820-120725.png)
 ![Eja Date Picker](docs/screenshot-datepicker.png)
