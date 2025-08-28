@@ -18,21 +18,14 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install system dependencies (autotools, Android, etc.)
+    - name: Install system dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y \
-          autoconf \
-          automake \
-          libtool \
-          m4 \
-          pkg-config \
-          libffi-dev \
-          libssl-dev \
-          build-essential \
-          unzip \
-          zip \
-          git \
+          autoconf automake libtool m4 pkg-config \
+          build-essential git unzip zip \
+          zlib1g-dev libncurses5-dev libsqlite3-dev \
+          libjpeg-dev libpng-dev libffi-dev libssl-dev \
           openjdk-17-jdk
 
     - name: Install Python dependencies
@@ -49,6 +42,13 @@ jobs:
 
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
+
+    - name: Install Android NDK 25c (compatible with p4a)
+      run: |
+        sdkmanager --install "ndk;25.2.9519653"
+        echo "ANDROID_NDK_HOME=$ANDROID_SDK_ROOT/ndk/25.2.9519653" >> $GITHUB_ENV
+        echo "ANDROID_NDK=$ANDROID_SDK_ROOT/ndk/25.2.9519653" >> $GITHUB_ENV
+        echo "ANDROID_NDK_ROOT=$ANDROID_SDK_ROOT/ndk/25.2.9519653" >> $GITHUB_ENV
 
     - name: Cache Buildozer global directory
       uses: actions/cache@v4
